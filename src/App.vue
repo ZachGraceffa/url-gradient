@@ -1,16 +1,31 @@
 <template>
-  <div id="app">
-    <div v-bind:style="gradient">Hello World!</div>
-  </div>
+  <div id="app" v-bind:style="gradient" /> 
 </template>
 
 <script>
 export default {
   name: 'App',
+  data: function() {
+    return {
+    gradientSteps: [ 'red', 'yellow'],
+    gradientStr: Array.prototype.join.call(arguments, ',')
+    };
+  },
   computed: {
-    gradient: function() {
-      return "background-image : linear-gradient(to bottom right, red, yellow);";
+    gradient() {
+      return 'background-image : linear-gradient(to bottom right, ' + Array.prototype.join.call(this.gradientSteps, ', ') + ');';
     }
   }
 }
 </script>
+
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#app {
+  height: 100%;
+}
+</style>
