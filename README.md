@@ -1,19 +1,17 @@
 # url-gradient
 
-## Project setup
-```
-npm install
-```
+Simple Vue.js app to parse the current url path and display the hex codes as a background gradient.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+So, whether you want to take on the heat in a sandy desert:
+![alt text](/examples/A73327-E7B258-B3662E.png)
+<sup>_localhost:8080/A73327/E7B258/B3662E_</sup>
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Stare at a serene overcast to match your seasonal depression:
+![alt text](/examples/bdc3c7-2f4054.png)
+<sup>_localhost:8080/bdc3c7/2f4054</sup>
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Or fall asleep on a soft rose petal:
+![alt text](/examples/ee9ca7-ffdde1-dfddf1.png)
+<sup>_localhost:8080/ee9ca7/ffdde1/dfddf1_</sup>
+
+The freedom is yours.
